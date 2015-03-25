@@ -22,9 +22,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('profile', {
+      .state('welcome', {
         url: "/",
-        templateUrl: "templates/profile.html"
+        templateUrl: "templates/welcome.html"
       })
 
       .state('app', {
@@ -43,8 +43,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       })
 
-      .state('app.browse', {
-        url: "/browse",
+      .state('app.request', {
+        url: "/request",
         views: {
           'menuContent': {
             templateUrl: "templates/browse.html"
